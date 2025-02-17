@@ -1,0 +1,93 @@
+.game-menu { 
+    display: flex;
+    width: 100%;
+    padding: 22px 80px 131px 23px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    background: linear-gradient(180deg, #3366FF, #00CCFF);  /* Frame background gradient */
+  }
+  
+  .responsive-image-container {
+    display: flex;
+    padding: 22px 80px 80px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .responsive-image {
+    aspect-ratio: 3.27;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /* Lighter shadow */
+  }
+  
+  .game-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 280px; /* Increased gap between cards */
+    margin-top: 100px;
+  }
+  
+  .game-card {
+    position: relative;
+    width: 200px; /* Increased card width */
+    height: 280px; /* Increased card height */
+    background-color: #0052CC; /* Solid Blue card background */
+    color: white; /* White text */
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px; /* Softer corners */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .game-card::before,
+  .game-card::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    z-index: -1;
+  }
+  
+  .game-card::before {
+    background-color: #FFCC00; /* Yellow back card */
+    top: 5px;
+    left: 5px;
+  }
+  
+  .game-card::after {
+    background-color: #FF3333; /* Red bottom back layer */
+    top: 10px;
+    left: 10px;
+  }
+  
+  .game-card:hover {
+    transform: scale(1.1); /* Slightly increased hover effect */
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3); /* More defined shadow on hover */
+  }
+  
+  @media (max-width: 991px) {
+    .responsive-image {
+      max-width: 100%;
+    }
+    
+    .game-card-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px; /* Slightly smaller gap for mobile */
+    }
+  
+    .game-card {
+      width: 180px; /* Smaller width for responsiveness */
+      height: 220px; /* Smaller height for responsiveness */
+    }
+  }

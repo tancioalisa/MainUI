@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"> <!-- Link to your CSS file -->
+    <title>Game Menu</title>
+</head>
+<body>
+    <div class="game-menu">
+        <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/4b859b1477cbf4ee846fbbef84eb5b6f3827ba810e8cce82672602d32d247425?placeholderIfAbsent=true&[REDACTED:Generic API Key]"
+            class="header-image"
+            alt="Game Menu Header"
+        />
+        <nav class="game-options" role="navigation" aria-label="Game selection">
+            <div class="top-row">
+                <button class="game-button backdrop-button" aria-label="Play Backdrop" onclick="location.href='backdrop.html'">
+                    BACKDROP
+                </button>
+                <button class="game-button gimme5-button" aria-label="Play Gimme 5" onclick="location.href='gimme.html'">
+                    GIMME 5
+                </button>
+            </div>
+            <div class="game-grid">
+                <div class="grid-column">
+                    <div class="button-container">
+                        <button class="game-button commercial-button" aria-label="Play Commercial" onclick="location.href='comme.html'">
+                            COMMERCIAL
+                        </button>
+                        <button class="game-button questions-button" aria-label="Load Questions" onclick="location.href='load_questions.html'">
+                            LOAD QUESTIONS
+                        </button>
+                    </div>
+                </div>
+                <div class="grid-column">
+                    <div class="button-container">
+                        <button class="game-button feud-button" aria-label="Play Family Feud" onclick="location.href='family_feud.html'">
+                            FAMILY FEUD
+                        </button>
+                        <button class="game-button deal-button" aria-label="Play Deal or No Deal" onclick="location.href='deal_or_no_deal.html'">
+                            DEAL OR NO DEAL
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script src="main.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

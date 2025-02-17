@@ -1,0 +1,121 @@
+.game-menu { 
+    display: flex;
+    width: 100%;
+    padding: 22px 80px 131px 23px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    background: linear-gradient(180deg, #3366FF, #00CCFF);  /* Frame background gradient */
+  }
+  
+  .gallery-container {
+    display: flex;
+    padding: 22px 80px 80px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .gallery-header-image {
+    aspect-ratio: 3.27;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .bottom-gallery {
+    align-self: center;
+    margin-top: 34px;
+    width: 100%;
+    max-width: 1055px;
+  }
+  
+  .bottom-gallery-container {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Ensure proper wrapping for smaller screens */
+    justify-content: space-between; /* Distribute buttons evenly */
+  }
+  
+  .button-column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    width: 48%; /* Adjust for two columns layout */
+  }
+  
+  .numbered-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: white; /* Button gradient */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: black; /* Text color changed to black */
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 5px solid; /* Add a stroke */
+    border-image: linear-gradient(180deg, #3366FF, #00CCFF) 1; /* Stroke gradient */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .numbered-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .numbered-button:focus {
+    outline: 3px solid #007bff;
+    outline-offset: 2px;
+  }
+  
+  .numbered-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #003399; /* Circle color */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 150px; /* Space between the circle and text */
+  }
+  
+  .button-text {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 991px) {
+    .gallery-container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .bottom-gallery-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .button-column {
+      width: 100%;
+    }
+  
+    .numbered-button {
+      font-size: 18px;
+      padding: 10px 15px;
+    }
+  
+    .numbered-circle {
+      width: 35px;
+      height: 35px;
+      font-size: 16px;
+    }
+  }

@@ -1,0 +1,125 @@
+.game-menu { 
+    display: flex;
+    width: 100%;
+    padding: 22px 80px 131px 23px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    background: linear-gradient(180deg, #3366FF, #00CCFF);  /* Frame background gradient */
+  }
+  
+  .header-image {
+    aspect-ratio: 3.56;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    align-self: stretch;
+  }
+  
+  .game-options {
+    width: 100%;
+    max-width: 1169px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 71px;
+  }
+  
+  .top-row {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    gap: 40px; /* Increased gap to create more space between buttons */
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .game-button {
+    border-radius: 20px; /* Uniform corner radius */
+    background-color: #fff; /* Inner color of the button */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 25px 70px;
+    font-family:
+      Inter,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 35px;
+    color: #000;
+    font-weight: 700;
+    border: 5px solid; /* Button outline stroke */
+    border-image: linear-gradient(180deg, #3366FF, #00CCFF) 1; /* Stroke gradient */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .game-button.backdrop,
+  .game-button.gimme-5 {
+    padding: 25px 70px; /* Adjusted padding to match other buttons */
+    width: 280px; /* Set fixed width */
+    height: 100px; /* Set fixed height */
+    border-radius: 20px; /* Add the corner radius for consistency */
+  }
+  
+  .game-button:hover {
+    transform: translateY(-2px);
+  }
+  
+  .game-button:focus {
+    outline: 3px solid #007bff;
+    outline-offset: 2px;
+  }
+  
+  .game-grid {
+    display: flex;
+    gap: 200px; /* Increased gap for more space between the two columns */
+  }
+  
+  .grid-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px; /* Increased gap to create more space between buttons within each column */
+  }
+  
+  @media (max-width: 991px) {
+    .game-menu {
+      max-width: 100%;
+      padding: 20px 20px 100px;
+    }
+  
+    .header-image {
+      max-width: 100%;
+    }
+  
+    .game-options {
+      max-width: 100%;
+      margin-top: 40px;
+      gap: 40px;
+    }
+  
+    .game-button {
+      padding: 25px 20px;
+      width: 100%; /* Full width for smaller screens */
+      height: auto; /* Adjust height for better responsiveness */
+    }
+  
+    .game-grid {
+      flex-direction: column;
+    }
+  
+    .grid-column {
+      width: 100%;
+    }
+  
+    .button-container {
+      gap: 50px; /* Increased gap to maintain spacing on smaller screens */
+      margin-top: 40px;
+    }
+  }
