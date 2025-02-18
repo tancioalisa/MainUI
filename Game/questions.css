@@ -1,0 +1,106 @@
+/* styles.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font for a modern look */
+    background-color: #f4f4f4; /* Light background for better contrast */
+    margin: 0;
+    padding: 20px;
+}
+
+.game-menu {
+    display: flex;
+    width: 100%;
+    padding: 40px 20px; /* Increased padding for a spacious feel */
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #a4b7e2, #15abdd); /* Frame background gradient */
+    border-radius: 10px; /* Softer corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    margin-bottom: 20px; /* Space between sections */
+}
+
+h1 {
+    color: #050505; /* Primary color for better visibility */
+    font-size: 2.5em; /* Increased font size for prominence */
+    margin-bottom: 20px; /* Spacing below the heading */
+    text-align: center; /* Centered heading */
+}
+
+h2 {
+    color: #050505; /* Primary color for better visibility */
+    font-size: 1.5em; /* Increased font size for subheadings */
+    margin: 15px 0; /* Spacing around subheadings */
+    text-align: left; /* Left-aligned subheadings */
+}
+
+form {
+    background: #ffffff; /* White background for forms */
+    padding: 30px; /* Increased padding for a more spacious feel */
+    border-radius: 8px; /* Softer corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    width: 100%; /* Full width */
+    max-width: 500px; /* Maximum width for better readability */
+    margin: 20px 0; /* Spacing between forms */
+}
+
+input[type="file"] {
+    margin: 15px 0; /* Increased margin for better spacing */
+    padding: 10px; /* Added padding for better touch targets */
+    border: 1px solid #ccc; /* Border for better visibility */
+    border-radius: 5px; /* Softer corners */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+input[type="file"]:focus {
+    border-color: #3717eb; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background-color: #28a745; /* Green button */
+    color: white; /* White text for contrast */
+    border: none;
+    padding: 12px 20px; /* Adjusted padding for uniform button size */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Increased font size for better readability */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effect */
+    width: 100%; /* Full width */
+}
+
+button:hover {
+    background-color: #218838; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0; /* Added margin for spacing */
+}
+
+p {
+    color: #333333; /* Dark gray for better readability */
+    margin: 10px 0; /* Added margin for spacing */
+    line-height: 1.5; /* Improved line height for readability */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .game-menu {
+        padding: 20px; /* Reduced padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 2em; /* Adjusted font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.25em; /* Adjusted font size for smaller screens */
+    }
+
+    form {
+        padding: 20px; /* Reduced padding on smaller screens */
+    }
+}

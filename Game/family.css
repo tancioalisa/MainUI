@@ -65,7 +65,7 @@
   }
   
   .game-card::after {
-    background-color: #FF3333; /* Red bottom back layer */
+    background-color: #ec4545; /* Red bottom back layer */
     top: 10px;
     left: 10px;
   }
